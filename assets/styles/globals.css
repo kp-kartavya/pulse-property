@@ -1,0 +1,19 @@
+/*  
+tailwindcss v3 syntax was like this:
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+*/
+
+/* Import Tailwind CSS styles is done like this in tailwind v4 */
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", sans-serif;
+
+  --grid-cols-70-30: 70% 28%;
+}
+
+@utility grid-cols-70-30 {
+  grid-template-columns: var(--grid-cols-70-30);
+}
